@@ -1,0 +1,203 @@
+body {
+    background: linear-gradient(135deg, #e8ecef 0%, #f5f5fa 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.banking-navbar {
+    background: #234869;
+    box-shadow: 0 2px 8px rgba(35, 72, 105, 0.07);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+
+.navbar-brand i {
+    color: #41a4ea;
+}
+
+.navbar-toggler {
+    border-color: #41a4ea;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(35, 72, 105, 0.13);
+    padding: 38px 40px;
+    width: 370px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.auth-logo i {
+    font-size: 2.2rem;
+    color: #234869;
+    margin-bottom: 8px;
+}
+
+.auth-title {
+    font-size: 1.45rem;
+    margin: 8px 0 2px 0;
+    color: #234869;
+    font-weight: 700;
+}
+
+.auth-subtitle {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #dde5ed;
+    padding: 10px 12px;
+    font-size: 1rem;
+    margin-bottom: 18px;
+    transition: border-color .2s;
+}
+
+.form-control:focus {
+    border-color: #41a4ea;
+    box-shadow: 0 0 0 2px #e5f3fc;
+}
+
+.btn-auth {
+    background: #234869;
+    border: none;
+    font-weight: 600;
+    font-size: 1.08rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(65, 164, 234, 0.10);
+    transition: background .2s;
+}
+
+.btn-auth:hover, .btn-primary:hover {
+    background: #41a4ea;
+}
+
+.auth-footer,
+.security-notice {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 0.98rem;
+}
+
+.security-notice i {
+    color: #41a4ea;
+}
+
+.upload-card, .credit-score-card, .card {
+    border-radius: 14px;
+    box-shadow: 0 2px 14px rgba(35, 72, 105, 0.12);
+}
+
+.upload-header h2, .dashboard-header h2 {
+    color: #234869;
+    font-weight: 600;
+}
+
+.upload-zone {
+    background: #f6fafd;
+    border: 2px dashed #dde5ed;
+    padding: 32px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.upload-zone h4 {
+    color: #41a4ea;
+    font-weight: 700;
+}
+
+.upload-btn {
+    border-radius: 7px;
+    font-size: 1.02rem;
+}
+
+.credit-score-card {
+    background: linear-gradient(135deg, #f6fafd 0%, #e8ecef 100%);
+    border: none;
+    text-align: center;
+}
+
+.credit-score-circle {
+    background: #fff;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 0 0 6px #e3f0fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #41a4ea;
+    line-height: 1.1;
+}
+
+.score-status {
+    font-size: 1.1rem;
+    color: #4f869a;
+    font-weight: 600;
+}
+
+.card-title {
+    color: #234869;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-header {
+    background: #f6fafd;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #41a4ea;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-primary:focus, .btn-primary:active {
+    background: #234869;
+}
+
+.progress-bar {
+    border-radius: 10px;
+    background: linear-gradient(90deg, #41a4ea 0%, #234869 100%);
+}
+
+.badge {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 6px 14px;
+    font-size: 0.98rem;
+}
+
+.table th, .table td {
+    vertical-align: middle !important;
+}

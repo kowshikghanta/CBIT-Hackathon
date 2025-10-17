@@ -12,7 +12,7 @@ def analyze_credit(csv_file_path):
     """
     try:
         # Load data
-        df = pd.read_csv(csv_file_path)
+        df = pd.read_csv("financial_dataset_50k.csv")
 
         # Features and target
         X = df.drop(columns=["Name", "Phone Number", "Email", "Credit Score"])
@@ -58,7 +58,7 @@ def analyze_credit(csv_file_path):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print("Usage: python Main.py <csv_file_path>")
+        print("Usage: python Main.py <financial_dataset_50k.csv>")
         sys.exit(1)
 
     csv_path = sys.argv[1]
