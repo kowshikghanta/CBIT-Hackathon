@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI-Powered Credit Scoring - Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Credit Scoring for the Unbanked</h1>
+        <form id="scoringForm">
+            <div class="form-group">
+                <label>Mobile Usage Minutes:</label>
+                <input type="number" id="mobileUsage" required>
+            </div>
+            <div class="form-group">
+                <label>Monthly Airtime Purchases:</label>
+                <input type="number" id="airtimePurchases" required>
+            </div>
+            <div class="form-group">
+                <label>Data Consumption (GB):</label>
+                <input type="number" id="dataConsumption" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label>Utility Electricity Paid:</label>
+                <select id="electricityPaid">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Utility Water Paid:</label>
+                <select id="waterPaid">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Rent Payment History:</label>
+                <select id="rentHistory">
+                    <option value="timely">Timely</option>
+                    <option value="delayed">Delayed</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Transaction Count:</label>
+                <input type="number" id="transactionCount" required>
+            </div>
+            <div class="form-group">
+                <label>Social Signal Score (0-1):</label>
+                <input type="number" id="socialScore" step="0.01" min="0" max="1" required>
+            </div>
+            <div class="form-group">
+                <label>Digital Footprint Score (0-1):</label>
+                <input type="number" id="digitalScore" step="0.01" min="0" max="1" required>
+            </div>
+            <div class="form-group">
+                <label>Loan Repaid Previously:</label>
+                <select id="loanRepaid">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button type="submit">Evaluate Risk</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
