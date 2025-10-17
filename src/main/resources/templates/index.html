@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank - Credit Score Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg banking-navbar d-none" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-shield-alt me-2"></i>
+                <span>SecureBank</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/upload"><i class="fas fa-upload me-1"></i> Upload</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-chart-line me-1"></i> Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt me-1"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Page -->
+    <div id="loginPage" class="page-container active">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <div class="auth-logo"><i class="fas fa-shield-alt"></i></div>
+                    <h2 class="auth-title">Sign In to Your Account</h2>
+                    <p class="auth-subtitle">Access your credit score analysis securely</p>
+                </div>
+                <form action="/login" method="post" class="auth-form">
+                    <div class="form-group">
+                        <label class="form-label" for="email"><i class="fas fa-envelope me-2"></i>Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="password"><i class="fas fa-lock me-2"></i>Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-auth w-100 mb-3">
+                        <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                    </button>
+                </form>
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="/signup">Create Account</a></p>
+                </div>
+                <div class="security-notice">
+                    <i class="fas fa-lock me-2"></i>
+                    <small>Your data is protected with bank-level encryption</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Page -->
+    <div id="signupPage" class="page-container">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <div class="auth-logo"><i class="fas fa-user-plus"></i></div>
+                    <h2 class="auth-title">Create Your Account</h2>
+                    <p class="auth-subtitle">Join thousands improving their credit score</p>
+                </div>
+                <form action="/signup" method="post" class="auth-form">
+                    <div class="form-group">
+                        <label class="form-label" for="fullName"><i class="fas fa-user me-2"></i>Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="signupEmail"><i class="fas fa-envelope me-2"></i>Email Address</label>
+                        <input type="email" class="form-control" id="signupEmail" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="signupPhone"><i class="fas fa-phone me-2"></i>Phone Number</label>
+                        <input type="tel" class="form-control" id="signupPhone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="signupPassword"><i class="fas fa-lock me-2"></i>Password</label>
+                        <input type="password" class="form-control" id="signupPassword" name="password" placeholder="Create a strong password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-auth w-100 mb-3">
+                        <i class="fas fa-user-plus me-2"></i>Create Account
+                    </button>
+                </form>
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="/login">Sign In</a></p>
+                </div>
+                <div class="security-notice">
+                    <i class="fas fa-shield-alt me-2"></i>
+                    <small>Your information is secured with 256-bit SSL encryption</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload Page -->
+    <div id="uploadPage" class="page-container">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" class="form-control" name="files" id="fileInput" multiple required>
+            <button type="submit" class="btn btn-primary mt-2">Upload Files</button>
+        </form>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboardPage" class="page-container">
+        <div class="container mt-4">
+            <h2>Credit Score Dashboard</h2>
+            <p class="text-muted">Your analysis</p>
+            <!-- Credit Score Overview (static sample content, add dynamic data in Spring controller if needed) -->
+            <div>
+                <div><strong>Credit Score: 750</strong> <span>Good</span></div>
+            </div>
+            <!-- Credit Score Breakdown, Recommendations, Account Overview, Recent Transactions can go here -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

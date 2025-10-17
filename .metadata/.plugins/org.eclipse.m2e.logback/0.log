@@ -1,0 +1,8 @@
+2025-10-17 20:46:20,517 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2025-10-17 21:13:30,408 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype_2.12/3.5.6_1.0.0/spark-scala-archetype_2.12-3.5.6_1.0.0.pom
+2025-10-17 21:13:30,456 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype_2.12/3.5.6_1.0.0/spark-scala-archetype_2.12-3.5.6_1.0.0.pom
+2025-10-17 21:13:30,726 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype-parent/3.5.6_1.0.0/spark-scala-archetype-parent-3.5.6_1.0.0.pom
+2025-10-17 21:13:30,777 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype-parent/3.5.6_1.0.0/spark-scala-archetype-parent-3.5.6_1.0.0.pom
+2025-10-17 21:13:31,008 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype_2.12/3.5.6_1.0.0/spark-scala-archetype_2.12-3.5.6_1.0.0.jar
+2025-10-17 21:13:31,204 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype_2.12/3.5.6_1.0.0/spark-scala-archetype_2.12-3.5.6_1.0.0.jar
+2025-10-17 21:27:55,243 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
