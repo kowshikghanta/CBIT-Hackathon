@@ -8,6 +8,7 @@ com\securebank\creditanalyzer\model\User$CreditScoreInfo.class
 com\securebank\creditanalyzer\service\PythonMLService.class
 com\securebank\creditanalyzer\service\AnalysisService.class
 com\securebank\creditanalyzer\CreditAnalyzerApplication.class
+com\securebank\creditanalyzer\util\LocalDateTimeAdapter.class
 com\securebank\creditanalyzer\model\CreditScore$AccountOverview.class
 com\securebank\creditanalyzer\repository\UserRepository$1.class
 com\securebank\creditanalyzer\repository\UserRepository.class

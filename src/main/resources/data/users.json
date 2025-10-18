@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "usr_320d5015",
+    "fullName": "Ghanta Kowshik Kumar",
+    "email": "Ghantakowshik73@gmail.com",
+    "phone": "9652491275",
+    "passwordHash": "$2a$10$omIh8IOuqEhGW4OF2UXtu.tkBl8n/o1Nx6Q.hLSVquQXglQdQPySG",
+    "createdAt": "2025-10-18T09:47:04.3461629",
+    "lastLogin": "2025-10-18T09:48:08.8624037",
+    "creditScore": {
+      "value": 0,
+      "status": "Not Analyzed",
+      "lastUpdated": "2025-10-18T09:47:04.346162900"
+    }
+  }
+]
